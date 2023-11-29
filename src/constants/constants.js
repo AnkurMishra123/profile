@@ -32,7 +32,7 @@ export const projects = [
     description: "I have made this Sorting Visualizer, a dynamic web application built with React. User can Witness the magic of Bubble, Selection, Insertion, Merge, Quick, and Heap sorts in real time action with adjustable speed and size controls or the blocks of data, gaining insights into algorithmic efficiency and complexity in real-time.",
     image: '/images/3.png',
     tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
+    source: 'https://github.com/AnkurMishra123/Sorting_Visualizer',
     visit: 'https://google.com',
     id: 3,
   },
@@ -41,7 +41,7 @@ export const projects = [
     description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     image: '/images/4.jpg',
     tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
+    source: 'https://github.com/AnkurMishra123/Sibling_chat',
     visit: 'https://google.com',
     id: 4,
   },
@@ -54,4 +54,13 @@ export const TimeLineData = [
   { year: 2021, text: 'Started my DSA Journey and Youtube Channel', },
   { year: 2022, text: 'Got Intern for 2 months as a web Developer', },
   { year: 2023, text: 'Continuing my development Journey', },
+];
+
+export const blogs = [
+  {
+    title: 'How to use GitHub',
+    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    image: '/images/4.jpg',
+    id: 1,
+  },
 ];

@@ -1,16 +1,17 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
-import { SiLeetcode } from "react-icons/si";
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons,Span } from './HeaderStyles';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { SiLeetcode } from 'react-icons/si';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
-const Header = () =>  (
+const Header = () => (
   <Container>
     <Div1>
-      <Link href="/" >
-        <a style={{display:"flex", alignItems:"center",color:"white",marginBottom:"20px"}}>
-          <DiCssdeck size="3rem" /><Span>Portfolio</Span>
+      <Link href="/">
+        <a style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}>
+          <DiCssdeck size="3rem" />
+          <Span>Portfolio</Span>
         </a>
       </Link>
     </Div1>
@@ -32,19 +33,15 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com'>
+      <SocialIcons href="https://github.com/AnkurMishra123">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href='https://instagram.com'>
+      <SocialIcons href='https://leetcode.com/Ankur_0152/'>
         <SiLeetcode size="3rem" />
       </SocialIcons>
-      <SocialIcons href='https://linkdin.com'>
+      <SocialIcons href="https://www.linkedin.com/in/ankur-mishra-338613204">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href='https://instagram.com'>
-        <AiFillInstagram size="3rem" />
-      </SocialIcons>
-      
     </Div3>
   </Container>
 );
