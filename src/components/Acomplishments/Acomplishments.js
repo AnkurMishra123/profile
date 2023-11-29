@@ -19,6 +19,10 @@ const Acomplishments = () => (
           <BoxText>{card.text}</BoxText>
         </Box>
       ))}
+      <Box>
+        <BoxNum> In Top 3</BoxNum>
+        <BoxText>SIH 2022 Hardware Edition</BoxText>
+      </Box>
     </Boxes>
     <SectionDivider />
   </Section>

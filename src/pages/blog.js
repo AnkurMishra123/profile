@@ -1,13 +1,23 @@
 
+import { useState } from 'react';
 import { Div1 } from '../components/Header/HeaderStyles';
 import { LeftSection } from '../components/Hero/HeroStyles';
-import { BlogCards, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from '../components/Projects/ProjectsStyles';
+import { BlogCards, CardInfo, ExternalLinks, GridContainers, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from '../components/Projects/ProjectsStyles';
 import { blogs } from '../constants/constants';
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../styles/GlobalComponents';
 
 
+const paragraph_style = {
+    webkitLineClamp: 3,
+    webkitBoxOrient: 'vectical',
+    overflow: 'hidden',
+    display: '-webkit-box',
+}
+
 const Home = () => {
+
+    const [isOpen, setIsOpen]=useState(false)
     return (
         <Layout>
             <Section row nopadding>
@@ -21,25 +31,28 @@ const Home = () => {
                 </LeftSection>
             </Section>
 {/* blogs cards */}
-            <Section nopadding id="projects">
+            <Section>
                 <SectionDivider />
-                <SectionTitle main>Projects</SectionTitle>
-                <Div1>
-                    {blogs.map(({ id, image, title, description}) => (
-                        <BlogCards key={id}>
+                <SectionTitle main>Blogs</SectionTitle>
+            </Section>
+            <GridContainers>
+                {blogs.map(({ id, image, title, description }) => (
+                    <div key={id}>
+                        <BlogCards>
                             <Img src={image} />
                             <TitleContent>
                                 <HeaderThree title>{title}</HeaderThree>
                                 <Hr />
                             </TitleContent>
                             <CardInfo>{description}</CardInfo>
-                            <br />                           
+                            <button onClick={() => setIsOpen(!isOpen)}>
+                                {isOpen ? 'read less...' : 'read more...'}
+                            </button>
                         </BlogCards>
-                    ))}
-                </Div1>
-            </Section>
-
-
+                        <br />
+                    </div>
+                ))}
+            </GridContainers>
         </Layout>
     );
 };
