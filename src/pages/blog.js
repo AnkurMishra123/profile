@@ -1,28 +1,20 @@
 
-import { useState } from 'react';
-import { Div1 } from '../components/Header/HeaderStyles';
+
 import { LeftSection } from '../components/Hero/HeroStyles';
+import ToggleReadMore from '../components/Projects/paragraph_splitter';
 import { BlogCards, CardInfo, ExternalLinks, GridContainers, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from '../components/Projects/ProjectsStyles';
 import { blogs } from '../constants/constants';
 import { Layout } from '../layout/Layout';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../styles/GlobalComponents';
-
-
-const paragraph_style = {
-    webkitLineClamp: 3,
-    webkitBoxOrient: 'vectical',
-    overflow: 'hidden',
-    display: '-webkit-box',
-}
+import { Section, SectionDivider, a, SectionTitle } from '../styles/GlobalComponents';
 
 const Home = () => {
 
-    const [isOpen, setIsOpen]=useState(false)
     return (
         <Layout>
             <Section row nopadding>
                 <LeftSection>
                     <SectionTitle main center>
+                    
                         Welcome To My Space
                     </SectionTitle>
                     {/* <SectionText>
@@ -30,7 +22,7 @@ const Home = () => {
                     </SectionText> */}
                 </LeftSection>
             </Section>
-{/* blogs cards */}
+            {/* blogs cards */}
             <Section>
                 <SectionDivider />
                 <SectionTitle main>Blogs</SectionTitle>
@@ -44,10 +36,15 @@ const Home = () => {
                                 <HeaderThree title>{title}</HeaderThree>
                                 <Hr />
                             </TitleContent>
-                            <CardInfo>{description}</CardInfo>
-                            <button onClick={() => setIsOpen(!isOpen)}>
-                                {isOpen ? 'read less...' : 'read more...'}
-                            </button>
+                            <CardInfo>
+                                <ToggleReadMore text={description} />
+
+                            </CardInfo>
+                            {/* 
+                            <br />
+                            <button>
+                                Click here
+                            </button> */}
                         </BlogCards>
                         <br />
                     </div>
