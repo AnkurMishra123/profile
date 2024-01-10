@@ -46,13 +46,21 @@ export const projects = [
   },
   {
     title: 'Sibling Chat',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     description: "This is a simple real time chat application using ChatEngine that allows real time chat services and file transfer with Firebase authentication for Google and Facebook login.",
     image: '/images/5.jpg',
     tags: ['React', 'ChatEngine', 'Firebase', 'Tailwind'],
     source: 'https://github.com/AnkurMishra123/Sibling_chat',
     visit: 'https://sibling-chat.netlify.app/',
     id: 5,
+  },
+  {
+    title: 'WhiteBoard Sharing App',
+    description: "This is a whiteboard sharing webpage, with real time chat functionality. The admin can create the room and is allowed with the controls to draw on the board.",
+    image: '/images/6.png',
+    tags: ['React', 'Socket.Io', 'BootStrap'],
+    source: 'https://github.com/AnkurMishra123/White-Board.git',
+    visit: 'https://github.com/AnkurMishra123/White-Board.git',
+    id: 6,
   },
 
 ];
