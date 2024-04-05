@@ -21,7 +21,8 @@ const Hero = (props) => {
           My Personal Portfolio
         </SectionTitle>
         <SectionText>
-          My name is Ankur, and I'm a Web Developer, coder, UI designer, and Inventor.
+          My name is Ankur, and I'm a Web Dev enthusiast, Problem Solver, UI designer, and an Inventor. <br />
+          I love to play around DSA Problems.
         </SectionText>
         <Button onClick={handleLearnMoreClick}>See My BLOGS</Button>
       </LeftSection>

@@ -4,8 +4,8 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 600, text: 'Leetcode Questions'},
-  { number: 1600, text: 'Leetcode Rating', },
+  { number: 700, text: 'Leetcode Questions'},
+  { number: 1740, text: 'Leetcode Rating', },
   
 ];
 
